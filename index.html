@@ -52,6 +52,17 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-top: 4px solid #b48b3b;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
     footer {
       background: #1f1f1f;
       color: white;
@@ -66,10 +77,11 @@
     <h1>Bâti Évolution</h1>
     <p>Le savoir faire pour vos projets</p>
   </header>
-  
+
   <nav>
     <a href="#services">Prestations</a>
     <a href="#about">À propos</a>
+    <a href="#gallery">Galerie</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -91,6 +103,18 @@
   <section id="about" class="section">
     <h2>À propos de Bâti Évolution</h2>
     <p>Fort d’une expérience de plus de 10 ans dans le bâtiment, notre équipe vous accompagne dans tous vos projets de rénovation, aménagement et entretien. Professionnalisme, polyvalence et rigueur sont nos maîtres-mots.</p>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Galerie de nos réalisations</h2>
+    <div class="gallery">
+      <img src="chantier1.jpg" alt="Chantier 1">
+      <img src="chantier2.jpg" alt="Chantier 2">
+      <img src="chantier3.jpg" alt="Chantier 3">
+      <img src="chantier4.jpg" alt="Chantier 4">
+      <img src="chantier5.jpg" alt="Chantier 5">
+      <img src="chantier6.jpg" alt="Chantier 6">
+    </div>
   </section>
 
   <section id="contact" class="section">
