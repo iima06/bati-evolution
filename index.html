@@ -58,17 +58,14 @@
       gap: 1.5rem;
       margin-top: 2rem;
     }
-    
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-  justify-items: center;
-}
-.gallery div {
-  width: 100%;
-}
-
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
     .gallery img:hover {
       transform: scale(1.03);
       box-shadow: 0 8px 16px rgba(0,0,0,0.2);
@@ -129,17 +126,7 @@
     .chantier h3 { text-align: center; margin-bottom: 1rem; }
     .gallery { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
     .gallery div { text-align: center; }
-    
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-  justify-items: center;
-}
-.gallery div {
-  width: 100%;
-}
-
+    .gallery img { width: 100%; max-width: 350px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     .label { margin-top: 0.5rem; font-weight: bold; color: #666; }
   </style>
 </head>
