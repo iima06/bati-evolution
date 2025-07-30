@@ -302,14 +302,37 @@
 </body>
 </html>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email : Injai.b75015@gmail.com</p>
-    <p>Téléphone : 06 05 53 84 22</p>
-    <p>Zone d'intervention : Alpes-Maritimes et alentours</p>
-  </section>
+  
 
-  <footer>
+  
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <form action="https://formsubmit.co/Injai.b75015@gmail.com" method="POST" enctype="multipart/form-data">
+    <div style="margin-bottom: 1rem;">
+      <label>Téléphone :</label><br>
+      <a href="tel:+33605538422" style="font-weight:bold; font-size:1.2em; color:#b48b3b; text-decoration:none;">📞 06 05 53 84 22</a>
+    </div>
+    <input type="hidden" name="_captcha" value="false">
+    <div style="margin-bottom: 1rem;">
+      <label>Nom :</label><br>
+      <input type="text" name="Nom" required style="width:100%; padding:8px;">
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <label>Email :</label><br>
+      <input type="email" name="Email" required style="width:100%; padding:8px;">
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <label>Message :</label><br>
+      <textarea name="Message" rows="5" required style="width:100%; padding:8px;"></textarea>
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <label>Pièce jointe :</label><br>
+      <input type="file" name="attachment" style="width:100%;">
+    </div>
+    <button type="submit" style="background:#b48b3b; color:white; padding:10px 20px; border:none; border-radius:5px;">Envoyer</button>
+  </form>
+</section>
+<footer>
     <p>&copy; 2025 Bâti Évolution - Tous droits réservés</p>
   </footer>
 
